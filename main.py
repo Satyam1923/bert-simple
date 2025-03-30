@@ -41,7 +41,7 @@ text = (
 
 
 
-SENTENCES = re.sub("[.,!?\\-]", '', text.lower()).split('\n')  # remove punctuation and split into sentences
+SENTENCES = re.sub("[.,!?\\-]", '', text.lower()).split('\n')  
 word_list = list(set(" ".join(SENTENCES).split()))
 
 word_index = {'[PAD]': 0, '[CLS]': 1, '[SEP]': 2, '[MASK]': 3} 
